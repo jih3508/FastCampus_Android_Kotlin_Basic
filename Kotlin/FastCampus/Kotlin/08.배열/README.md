@@ -1,36 +1,56 @@
-# 03.NULL
+# 08.배열
 
-### Null이란?
-- 상태를 모름, 존재하지 않음
-- 0과는 다르다
-  - 0: 두루마리 휴지에서 심지만 남은 상태, Null: 두루마리 휴지가 없음
-- Null을 대상으로 연산을 할 수 없다.(+,-,*,/)
-  - Null + 3 = Null
-  - 비교연산은 가능하다
+### 배열이란?
+- 특정 하나의 변수에 복수 개의 값을 할당하고 싶은 경우
+- var number : Int = 10 → 10이라는 값이 number라는 변수에 할당이 된다
+- var exam_score: Int = 100, 98, 75
+- 배열은 저장될 수 있는 값의 개수를 정해놓아야하고, 이 개수는 변경 할 수 없다.
 
-### 예시
-```
-코드 1줄
-코드 2줄
-코드 3줄
-코드 4줄 c = a + b
-```
-### 발생할 수 있는 문제
-  - a or b가 null인 경우 에러 발생
-#### 해결방법: 더하기 연산을 하기 전에, 코드 3줄에서 a or b가 null 인지 확인
-
-### NullSafety(Null로부터 안전함)
-- 코틀린의 가장 큰 특징중 하나
-
-
-### 그렇다면 Null은 필요 없는거 아니나?
-- 변수에 값 + 사이에도 표현할 수 있다면 좋은거 아닌가?
-- 데이터 처리과정에서 없는 데이터를 표현하기 위해서 사용
-
-### Null을 표현하는 방법
-#### val/var 변수명 : 자료형 = 값
-- null은 값 자리에 들어 올 수 있다.
-  - val/var 변수명 : 자료형 = null
-- val/var 변수명 : 자료형? = 값
-  - val number : Int = null → null 가능
-  - val number : Int = 10 → null불가능
+### 배열을 선언하는 방법
+1. 배열을 선언하는 방법(1)
+- arrayOf<자료형/생략>(값1, 값2, 값3) = 자료형Array(값1, 값2, 값3)
+  - 생략했을 경우 복수개의 자료형이 배열의 인자로 올 수 있다. → 자료형 -> non-null, nullable 모두 포함(Int, Int?)
+  - var array1 = arrayOf(true, false, "안녕하세요", 10, 2.2)
+- 자료형을 적어 줬을 경우, 해당 자료형만 인자로 들어올 수 잇다
+  - var array2 = arrayOf<Int>(10, 20, 30)
+  - var array3 = arrayOf<Double>(2.2, 4.5)
+- <자료형> ->를 대체할 수 있는 방법
+  - var array4 = intArrayOf(1, 2, 3, 4, 5)
+  - var array5 = booleanArrayOf(true, false, true)
+- null 을 인자로 받는 배열
+  - var nulls = arrayOfNulls<Int>(4)
+2. 배열을 선언하는 방법(2)
+- 자료형/생략Array(크기, {값 / 생략가능})
+  - var array6 = Array(10, {0}) → 10칸짜리 배열을 만들고 기본값으로 0을 넣어준다.
+- 자료형 명시
+  - var array7 = IntArray(10, {0})
+  - var array8 = DoubleArray(10, {0.0})
+  - var array9 = StringArray(10, {"Hi"}) → 이건 불가능 → 지금 몰라도 된다 → 사용하지 마라
+3. 배열을 선언하는 방법(3)
+- Array<자료형/생략가능>(크기, {값/생략가능})
+  - var array10 = Array(10, {0}) → 생략을 했을 경우에는 디폴트 값의 자료형으로 정해진다.
+  - var array11 = Array<Int>(10, {0})
+  - var array12 = Array<String>(19, {"Hi"})
+4. 배열에 값을 넣는 방법
+- var array13 = Array<Int>(3, {0}) [0, 0, 0, ...]
+- 1번 방법 → 배열명[index] = 값
+	- array12[2] = 100
+	- array12[0] = 1
+- 2번 방법 -> 배열명, set(index, 값)
+	- array12.set(2, 100)
+	- array12.set(0, 1)
+5. 배열에 있는 값을 가져오는 방법
+- 배열명[인덱스]
+  - val value = array12[3]
+- 배열명.get(인덱스)
+  - val value2 = array12.get(0)
+### 추가 Index
+- index는 0부터 시작을 한다.
+- 순서를 나타낸다.
+- [0, 2, 100, ...]
+	- index0 : 0
+	- index1 : 2
+	- index2 : 100
+### 추가
+- 개발언어는 문법적인 요소만 있는 것이 아니라, 일반적이고 개발자가 많이 사용하는 기능들 기본적으로 포함한다.
+- 만약에, 내가 원하는 기능이 기본적으로 포함된 기능이 아니라면, 만들어서 사용하거나, 그 기능 추가하면 된다.(라이브러리)
