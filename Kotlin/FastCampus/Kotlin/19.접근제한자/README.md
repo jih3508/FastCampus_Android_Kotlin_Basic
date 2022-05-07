@@ -1,45 +1,43 @@
-# 15.고차함수&람다
+# 19.접근제한자
 
-### 고차함수 (High-order function)
-- 함수를 인자로 받고 결과 값으로 내보낼수 있다.
-- fun function1 (number : Int) → Int = {}
-    - 함수 타입 표시 하는 방법
-        - (파라미터의 자료형1, 파라미터의 자료형2) -> 결과의 자료형
-        ```kotlin
-         fun function2(function : (Int, Int) -> Int){
-    		//함수 내용
-    	  }
-    - 고차함수를 호출하는 방법
-    	- function1(100, 100) -> 일반적인 함수 호출 방법
-    	- fcuntion2(::funtion1)
-### 람다(Lambda)
-- 람다함수는 그 자체로 고차함수 이기 때문에 별도의 연산자 없이 변수에 담을 수 있다.
-- 람다함수에서는 return을 사용할수 없고 마지막 라인이 리턴이 된다.
-1. 풀 버전
-```kotlin
-    val function3: (String) -> Unit = {str:String -> 함수내용}
-    val number1: Int = 10
-```
-2. 축약버전
-```kotlin
-// 생략버젼1
-val addTenNine3: (Int, Int) -> Int = {number1, number2 ->
-    number1 + number2
-}
+### 범위(Scope)
+- - 변수, 함수, 클래스
+- 규칙
+	- 같은 스코프 안에서는 공유가 가능하다
+	- 하위 스코프에서는 상위 스코프 맴버를 사용 및 재정의(할당) 할 수 있다.
+		- 상위 스코프에서는 하위 스코트에 있는 맴버를 사용 및 재정의 할 수 없다.
+- 스코프에 따라서 접근 할 수 있는 스코프가 있고 접근 할 수 없는 스코프가 있다. → 개발자의 의도 상관 없음
 
-// 생략버젼2
-val addTenNine4 = {number1: Int, number2: Int ->
-    number1 + number2
-}
+### 접근제한자 
+- 내가 어떻게 접근을 제한하는지에 따라 달라진다.
+- public, internal, private, protected
+- 변수, 함수, 클래스 선언시 맨 앞에 적어준다
+	- private val number : Int = 10
+- 패키지
+	- public: 어디에서든 접근 가능
+	- internal: 같은 모듈안에서 접근 가능
+	- private: 같은 파일안에서 접근 가능
+	- protected: 사용안함
+- 클래스
+	- public: 클래스 외부에서 접근 가능
+	- private: 클래스 내부에서만 사용 가능
+	- protected: 클래스 자신과 상속받은 클래스에서 접근 가능
+	- internal: 사용 안함
+- 주로 사용하는 접근제한자 키워드
+	- public, private (99.99%)
 
-// 생략버젼3
-addTenNine {number1, number2 -> number1 + number2}
-```
-3. 파라미터가 없는 람다
-```kotlin
-val addTenNine5: () -> Int = {
-    10 + 9
-}
-```
-4. 파라미터가 한 개인 경우라면 it을 사용한다.
-- val function4 : (String) -> Unit = {}
+### 물리적 구성
+- 프로젝트
+    - 모듈들로 구성 된다.
+- 모듈
+    - 라이브러리로 구성 된다
+- 라이브러리
+    - 파일, 폴더
+- 특정 기능
+    - ex) 사진 모듈
+        - 사진 찍는 라이브러리
+        - 사진 수정 라이브러리
+        - 사진 저장 라이브러리
+
+- 패키지
+    - 논리적 단위
