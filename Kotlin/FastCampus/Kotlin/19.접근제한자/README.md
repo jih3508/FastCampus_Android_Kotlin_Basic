@@ -1,0 +1,45 @@
+# 15.고차함수&람다
+
+### 고차함수 (High-order function)
+- 함수를 인자로 받고 결과 값으로 내보낼수 있다.
+- fun function1 (number : Int) → Int = {}
+    - 함수 타입 표시 하는 방법
+        - (파라미터의 자료형1, 파라미터의 자료형2) -> 결과의 자료형
+        ```kotlin
+         fun function2(function : (Int, Int) -> Int){
+    		//함수 내용
+    	  }
+    - 고차함수를 호출하는 방법
+    	- function1(100, 100) -> 일반적인 함수 호출 방법
+    	- fcuntion2(::funtion1)
+### 람다(Lambda)
+- 람다함수는 그 자체로 고차함수 이기 때문에 별도의 연산자 없이 변수에 담을 수 있다.
+- 람다함수에서는 return을 사용할수 없고 마지막 라인이 리턴이 된다.
+1. 풀 버전
+```kotlin
+    val function3: (String) -> Unit = {str:String -> 함수내용}
+    val number1: Int = 10
+```
+2. 축약버전
+```kotlin
+// 생략버젼1
+val addTenNine3: (Int, Int) -> Int = {number1, number2 ->
+    number1 + number2
+}
+
+// 생략버젼2
+val addTenNine4 = {number1: Int, number2: Int ->
+    number1 + number2
+}
+
+// 생략버젼3
+addTenNine {number1, number2 -> number1 + number2}
+```
+3. 파라미터가 없는 람다
+```kotlin
+val addTenNine5: () -> Int = {
+    10 + 9
+}
+```
+4. 파라미터가 한 개인 경우라면 it을 사용한다.
+- val function4 : (String) -> Unit = {}
