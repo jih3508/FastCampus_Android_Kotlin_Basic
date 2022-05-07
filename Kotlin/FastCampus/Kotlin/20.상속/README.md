@@ -50,7 +50,7 @@
 	- 재선언과 동일하다
 	- 이전에 정의한 것을 번복하도 새롭게 정의하겠다.
 		- 반복 → 이전에 정의한 것은 작동하지 않는다. → 이전 것을 덮어쓴다.
-```
+```kotlin
 open class Warrior1(var name: String, var power: Int, var type: String){
 	fun attack(){
 		println(“복잡한 코드 + 공격”)
@@ -74,7 +74,7 @@ class DefenseWarrior1 constructor(name: String, power: Int) : Warrior1(name, pow
 ```
 ### 오버로딩(Overloading)
 - 동일한 할수를 복수개 만드는 것을 불가능하다. → 복수개 있는 경우에 어떤 것 사용자가 사용하기를 원했는지 알 수 없기 때문이다.
-```
+```kotlin
 fun sum(a: Int, b : Int):Int {return a+b}
 fun sum(a: Int, b : Int):Int {return a+b}
 
@@ -82,7 +82,7 @@ sum(1, 2)
 ```
 - 어떤 것 사용자가 사용하기를 원했는지 알 수 있다면 동일한 이름의 함수를 복수개 만들 수 있다.
 	- 함수가 받는 인자가 다른 경우
-	```
+	```kotlin
 	fun sum(a: Int, b : Int):Int {return a+b}
 	fun sum(a: Int):Int {return a+10}
 	sum(10, 20)
@@ -91,7 +91,9 @@ sum(1, 2)
 
 
 	- 함수가 리턴하는 타입이 다른 경우 -> 오버로딩이 불가능하다.
+	```kotlin
 	fun sum(a: Int, b : Int):Int {return a+b}
 	fun sum(a: Int):String {return a+10}
 	val a : Int = sum(10, 20)
 	val b : String = sum(20, 20)
+	```
