@@ -13,7 +13,7 @@
 ```kotlin
 val warrior : Warrior = Warrior()
 ```
-	- Class도 자료형이다.
+- Class도 자료형이다.
 - 상속 클래스간의 자료형
 	- 슈퍼클래스(Warrior) 서브클래스(DefenseWarrior) 서브클래스(HardAttackWarrior)
 	- DefenseWarrior is Warrior(O)
