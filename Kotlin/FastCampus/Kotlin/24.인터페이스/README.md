@@ -11,13 +11,13 @@ interface Tiger{
 	fun goToBox()
 }
 ```
--> 구현부가 없다.
+→ 구현부가 없다.
 
 - 규약(프로토콜)
 	- 인터페이스에 비어 있는 것을 채워주면 해당 인터페이스로 봐주겠다.
-	- 비어 있는 것을 -> abstract(추상)
+	- 비어 있는 것을 → abstract(추상)
 	- 채워주면 -> 구현한다
-	- 인터페이스로 봐주겠다 -> Tiger 타입니다. 
+	- 인터페이스로 봐주겠다 → Tiger 타입니다. 
 ```
 class BackDoSanTiger : Tiger{
 	var 줄무늬 = 검은색 줄무늬
@@ -25,19 +25,19 @@ class BackDoSanTiger : Tiger{
 	fun goToBox() {큰 상자에 들어 간다.}
 }
 ```
--> 규약을 지켰다.
+→ 규약을 지켰다.
 
 - Interface
 	- 의사소통 창구
-	- 인터페이스를 보고 인터페이스를 구현한 클래스의 객체와 의사소통 할 수 있다.
-		-> 이것을 가능하게 하기 위해서 생긴 특징이 규약이다.
-	- 의사소통 할 수 있다 -> 사용이 가능하다
-	- ```
+	- 인터페이스를 보고 인터페이스를 구현한 클래스의 객체와 의사소통 할 수 있다. → 이것을 가능하게 하기 위해서 생긴 특징이 규약이다.
+	- 의사소통 할 수 있다 → 사용이 가능하다
+	```
 	val backDoSanTiger = BackDoSanTiger()
 	backdoSanTiger.bite()
 	backdoSanTiger.goToBox()
+	```
 
-장점
+### 장점
 - 헙업
 - 확장
 	- 디증 구현이 가능하다.(비추천)
