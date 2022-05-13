@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_toLeftOf="" Of="@id/name"
+        android:layout_toLeftOf="@id/name"
         android:background="@color/purple_700"/>
 
 </RelativeLayout>
