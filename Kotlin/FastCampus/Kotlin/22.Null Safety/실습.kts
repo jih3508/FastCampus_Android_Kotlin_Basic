@@ -41,4 +41,4 @@ val text2 : String = "123"
 val nullText: STring? = null
 
 var len1 : Int if(text2 != null) text2.length else 0
-var len2 : Int = text2?.length ?: 0        
+var len2 : Int = text2?.length ?: 0
