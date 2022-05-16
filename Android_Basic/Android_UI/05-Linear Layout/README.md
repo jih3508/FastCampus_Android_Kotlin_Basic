@@ -8,7 +8,7 @@
 	- weight : 자식이 차지하는 크기의 비율을 설정
 	- layout_weight: 레이아웃 차지하는 비율
 	
-크기를 설정하는 특수한 키워드
+### 크기를 설정하는 특수한 키워드
 - match_parent
 	- 부모 뷰의 크기만큼 설정 하겠다.
 - wrap_content
