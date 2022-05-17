@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/drawable/drawable1.xml" value="0.237" />
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/drawable/drawable_2.xml" value="0.317" />
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3375" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/activity_main.xml" value="0.20820863616930313" />
-        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_1.xml" value="0.144" />
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_1.xml" value="0.176" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_2.xml" value="0.16" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_3.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_4.xml" value="0.2" />
@@ -14,6 +17,7 @@
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_homework1_lecture.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraintlayout_homework2_me.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/constraomtlayout_homwork1_me.xml" value="0.18469431380932022" />
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/drawable.xml" value="0.18854211201368107" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/framelayout.xml" value="0.1838392475416845" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/gravity.xml" value="0.2" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/linearlayour_homework_lecture.xml" value="0.20820863616930313" />
@@ -25,6 +29,7 @@
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/relativelayout_homwork_me1.xml" value="0.20820863616930313" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/relativelayout_homwwork1_lectur.xml" value="0.20820863616930313" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/relativlayout_homework_me2.xml" value="0.189453125" />
+        <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/resource.xml" value="0.12194016319129647" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/resourcle.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/scrollview.xml" value="0.18469431380932022" />
         <entry key="..\:/Users/ibiz/Desktop/MyGit/Fasctcampus_Android_Kotlin_basic/Android_Basic/FastCampusAndroid/app/src/main/res/layout/test.xml" value="0.29782411604714415" />

@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/center"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/black"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toLefttOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/top1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/purple_700"
-        app:layout_constraintRight_toLeftOf="@+id/center"
         app:layout_constraintBottom_toTopOf="@+id/center"
-        />
+        app:layout_constraintRight_toLeftOf="@+id/center" />
 
     <TextView
         android:id="@+id/top2"
@@ -32,8 +28,7 @@
         android:layout_height="100dp"
         android:background="@color/purple_200"
         app:layout_constraintBottom_toTopOf="@+id/center"
-        app:layout_constraintLeft_toRightOf="@id/top1"
-        />
+        app:layout_constraintLeft_toRightOf="@id/top1" />
 
     <TextView
         android:id="@+id/top3"
@@ -41,26 +36,23 @@
         android:layout_height="100dp"
         android:background="@color/purple_700"
         app:layout_constraintBottom_toTopOf="@+id/center"
-        app:layout_constraintLeft_toRightOf="@id/top2"
-        />
+        app:layout_constraintLeft_toRightOf="@id/top2" />
 
     <TextView
         android:id="@+id/middle1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/design_default_color_secondary"
-        app:layout_constraintTop_toBottomOf="@+id/top1"
         app:layout_constraintRight_toLeftOf="@id/center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/top1" />
 
     <TextView
         android:id="@+id/middle2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/design_default_color_secondary_variant"
-        app:layout_constraintTop_toBottomOf="@+id/top1"
         app:layout_constraintLeft_toRightOf="@id/center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/top1" />
 
 
     <TextView
@@ -68,26 +60,23 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/design_default_color_secondary_variant"
-        app:layout_constraintTop_toBottomOf="@+id/middle1"
         app:layout_constraintRight_toLeftOf="@id/center"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/middle1" />
 
     <TextView
         android:id="@+id/bottom2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/design_default_color_secondary"
-        app:layout_constraintTop_toBottomOf="@+id/middle1"
         app:layout_constraintLeft_toRightOf="@id/bottom1"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/middle1" />
 
     <TextView
         android:id="@+id/bottom3"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@color/purple_200"
-        app:layout_constraintTop_toBottomOf="@+id/middle1"
         app:layout_constraintLeft_toRightOf="@id/bottom2"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/middle1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
