@@ -1,1 +1,9 @@
-# FastCampus_Android_Kotlin_Basic
+# ScrollView (스크롤 뷰)
+
+- 자식을 가질수 있는 컨테이너 뷰
+	- 자식을 오직 하나만 가질수 있다.
+- 속성
+	- fillViewPort : 자식한테 비어있는 공간을 다 넘겨주겠다.
+
+### 결과화면
+![결과화면](./결과.PNG)
