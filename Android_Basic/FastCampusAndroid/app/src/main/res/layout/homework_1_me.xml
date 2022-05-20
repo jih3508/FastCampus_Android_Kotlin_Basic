@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:src="@drawable/page_1" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/homwork1_me"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="페이스북계정 연결"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_fb2"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/homwork2_me"/>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="카카오계정 연결"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo_kt"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=">> 회원가입 건너뛰고 레시피 확인하기"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/sandwich_bg_1"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
