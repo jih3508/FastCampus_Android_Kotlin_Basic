@@ -1,24 +1,16 @@
-# XML
+# ViewControl
 
-### 언어의 종류
-
-#### General Purpose Language
-- 범용적인 목적을 가지고 있는 언어
-- Kotlin, Python, Java, C, C++, Swift,....
-
-#### Domain Specific Language(DSL)
-- 도메인 특화 언어 -> 특수한 목적을 달성하기 위한 언어
-- 간단한 문법
-- XML
-
-#### XML (eXtensible Markup Language)
-- 안드로이드에서 UI를 그리기 위해서 채택한 언어
-- Markup Language
-	- 태그로 마크를 하여 내용 작성
-	- 태그 -> 범위를 정한다.
-	- eXtensible -> 태그안에 태그가 추가 가능
-- 태그
-	- <태그 속성..> </태그>
-		- 자식태그가 올 수 있는 경우
-	- <태그 속성../>
-		- 마지막 자식인 경우
+### 뷰를 컨트롤 하는 방법
+- 사용자와의 상호작용으로 인해서 뷰를 조작 하는 방법
+	- 뷰에 이벤트가 발생했을때 처리하는 방법
+- Listner
+	- 이벤트가 발생했을 때 수신 하는 중
+	
+- xml에 존재하는 뷰를 activity로 가져오는 방법
+	- findViewById
+		- Id -> xml에서 부여한 view의 id
+	- kotlinx
+		- 귀찮은 findViewById과정을 생략가능 하다.
+		- deprecated 되었다 -> 가급적이면 사용을 피해야한다.
+	- databinding
+		- 뷰와 데이터를 묶는다
