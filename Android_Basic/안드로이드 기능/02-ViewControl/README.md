@@ -9,8 +9,14 @@
 - xml에 존재하는 뷰를 activity로 가져오는 방법
 	- findViewById
 		- Id -> xml에서 부여한 view의 id
+		- R.Id.id명을 넣는다.
+		- textView
+			- text: 텍트스 추가
+		- bunttonView
+			- .setOnClickListener: 버튼클릭시 이벤트 처리
 	- kotlinx
 		- 귀찮은 findViewById과정을 생략가능 하다.
 		- deprecated 되었다 -> 가급적이면 사용을 피해야한다.
 	- databinding
 		- 뷰와 데이터를 묶는다
+		
