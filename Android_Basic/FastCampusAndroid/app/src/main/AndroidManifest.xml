@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Homework_1_me"
+            android:exported="false" />
+        <activity
+            android:name=".ViewControl_02"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
@@ -19,7 +25,7 @@
             android:name=".TestActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewControl_02"
+            android:name=".Homework_1_Lecture"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

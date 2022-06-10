@@ -1,0 +1,22 @@
+# ViewControl
+
+### 뷰를 컨트롤 하는 방법
+- 사용자와의 상호작용으로 인해서 뷰를 조작 하는 방법
+	- 뷰에 이벤트가 발생했을때 처리하는 방법
+- Listner
+	- 이벤트가 발생했을 때 수신 하는 중
+	
+- xml에 존재하는 뷰를 activity로 가져오는 방법
+	- findViewById
+		- Id -> xml에서 부여한 view의 id
+		- R.Id.id명을 넣는다.
+		- textView
+			- text: 텍트스 추가
+		- bunttonView
+			- .setOnClickListener: 버튼클릭시 이벤트 처리
+	- kotlinx
+		- 귀찮은 findViewById과정을 생략가능 하다.
+		- deprecated 되었다 -> 가급적이면 사용을 피해야한다.
+	- databinding
+		- 뷰와 데이터를 묶는다
+		
