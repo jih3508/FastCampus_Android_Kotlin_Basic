@@ -9,10 +9,29 @@
 
 - 명시적 인텐트(Explicit Intent)
 	- 호출될 대상을 명시하는 경우
+	- 기본
+	```kotlin
+	findViewById<TextView>(R.id.intent_two)).apply {
+            this.setOnClickListener{}
+            startActivity(
+                Intent(this@Intent_One, Intent_Two::class.java)
+            )
+        }
+	```
 - 암시적 인텐트(Implicit Intent)
 	- 호출될 대상을 명시하지 않을 경우
 	- 인텐트 필터(Intent - filter)
 		- 암시적 인텐트를 보낸 경우, 인텐트가 처리할 수 있는지 확인할 때 사용
+	```
+	val implicit_intent: TextView = findViewById(R.id.implicit_intent)
+        implicit_intent.setOnClickListener {
+            val intent: Intent = Intent(
+                Intent.ACTION_DIAL,
+                Uri.parse("tel:" + "010-1111-1111")
+            )
+            startActivity(intent)
+        }
+	```
 - 인텐트 호출 대상
 	- 앱네에서
 		- 엑티비티 끼리
