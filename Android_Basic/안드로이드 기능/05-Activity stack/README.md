@@ -1,9 +1,11 @@
 # 05.Activity Stack
+
+### Activity Stack
 - 스택 : 후입선출(LIFO, Last In, First Out) <-> FIFO(First In, First Out)
 - stack 될 수 있으면 건들지 않는게 좋다.
 - 분명한 의도를 가지고 적용해야 한다. → 모든 종류를 다 알 수는 없다. → stack을 관리할 일이 발생 했을 경우에 적용 가능한 launchMode, Flag를 찾아본다
 
-Stack 관리
+### Stack 관리
 - Manifest 이용
 	- launchMode
 		- standard(LIFO)
