@@ -13,6 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".PhoneBookDetailActivityLecture"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneBookActivityLecture"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneBookDetailActivityMe"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneBookActivityMe"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".AddViewActivity"
             android:exported="true">
             <intent-filter>
